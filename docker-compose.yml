@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  s3.demo.api:
+    image: ${DOCKER_REGISTRY-}s3demo
+    build:
+      context: .
+      dockerfile: S3.Demo.API/Dockerfile
